@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.mercedes-title {
+  font-family: 'Playfair Display', serif;
+}
+
+.btn-dark {
+  font-size: 16px;
+  color: #dddddd;
+  font-weight: normal;
+  background-color: #333;
+  border: 1px solid #333;
+  padding: 7px 20px;
+}
+
+.btn-dark:hover {
+  background-color: #202020;
+  border-color: #202020;
+  color: #dddddd;
+}
+
+.btn-dark:focus {
+  outline: none;
+}
+
+.btn-blue {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: normal;
+  background-color: #00adef;
+  border: 1px solid #00adef;
+  padding: 5px 12px;
+}
+
+.btn-blue:hover {
+  background-color: #0088c6;
+  border-color: #0088c6;
+  color: #ffffff;
+}
+
+.btn-blue:focus {
+  outline: none;
+}
+/*# sourceMappingURL=main.css.map */
