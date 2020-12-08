@@ -1,0 +1,17 @@
+.header__top{
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+    }
+    li{
+        margin: 0 $mg-1;
+    }
+    a{
+        text-decoration: none;
+       @include styleText($fs-1,$color-white-0,$fw-normal);
+       i{
+           margin: 0 $mg-1 0 0;
+       }
+    }
+}

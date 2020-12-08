@@ -52,4 +52,26 @@ html, body {
 .btn-blue:focus {
   outline: none;
 }
+
+.header__top ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+.header__top li {
+  margin: 0 10px;
+}
+
+.header__top a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.header__top a i {
+  margin: 0 10px 0 0;
+}
 /*# sourceMappingURL=main.css.map */
