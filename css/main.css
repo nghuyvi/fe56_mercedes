@@ -15,6 +15,43 @@ html, body {
   font-family: 'Playfair Display', serif;
 }
 
+.owl-carousel .owl-nav {
+  margin: 0;
+  height: 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev span {
+  position: absolute;
+  top: 45%;
+  left: 2%;
+  height: 30px;
+  width: 30px;
+  font-size: 70px;
+  line-height: 10px;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.owl-carousel .owl-nav button.owl-prev span:hover {
+  color: #999;
+}
+
+.owl-carousel .owl-nav button.owl-next span {
+  position: absolute;
+  top: 45%;
+  right: 2%;
+  height: 30px;
+  width: 30px;
+  font-size: 70px;
+  line-height: 10px;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.owl-carousel .owl-nav button.owl-next span:hover {
+  color: #999;
+}
+
 .btn-dark {
   font-size: 16px;
   color: #dddddd;
@@ -140,6 +177,11 @@ header .navbar .nav-item .nav-link:hover {
   position: relative;
 }
 
+.merCarousel--content .item--background img {
+  width: 100%;
+  height: 100%;
+}
+
 .merCarousel--content .item--content {
   position: absolute;
   top: 10%;
@@ -165,5 +207,72 @@ header .navbar .nav-item .nav-link:hover {
 
 .merCarousel--content .item--content a:hover {
   background-color: #000000;
+}
+
+@media screen and (max-width: 992px) {
+  .merCarousel--content .item--content a h3 {
+    font-size: 34px;
+    color: #ffffff;
+    font-weight: normal;
+    padding-right: 30%;
+  }
+}
+
+.merArticle {
+  background: #000000;
+}
+
+.merArticle .merSearch .form-control {
+  border: none;
+  border-radius: 0;
+}
+
+.merArticle .merSearch .form-control:focus {
+  box-shadow: none;
+}
+
+.merArticle .merSearch .input-group-text {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.merArticle .merArticel {
+  padding-right: 40%;
+  text-align: justify;
+}
+
+.merArticle .merArticel h3 {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.merArticle .merArticel p {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.merArticle .merArticel a:first-child {
+  font-size: 14px;
+  color: #00adef;
+  font-weight: normal;
+}
+
+.merArticle .merArticel a:first-child:hover {
+  font-size: 14px;
+  color: #0088c6;
+  font-weight: normal;
+}
+
+.merArticle .merArticel a.btn {
+  border-radius: 0;
+  background-color: #00adef;
+}
+
+.merArticle .merArticel a.btn:hover {
+  background-color: #0088c6;
 }
 /*# sourceMappingURL=main.css.map */
