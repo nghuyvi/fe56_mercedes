@@ -53,25 +53,117 @@ html, body {
   outline: none;
 }
 
-.header__top ul {
+header {
+  background-color: #000000;
+}
+
+header .header__top {
+  width: 95%;
+  margin: auto;
+}
+
+header .header__top ul {
   display: flex;
   list-style: none;
   justify-content: flex-end;
-  margin-bottom: 0;
 }
 
-.header__top li {
-  margin: 0 10px;
+header .header__top li {
+  margin-right: 20px;
 }
 
-.header__top a {
+header .header__top a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
   font-weight: normal;
 }
 
-.header__top a i {
-  margin: 0 10px 0 0;
+header .header__top a:hover {
+  font-size: 14px;
+  color: #0088c6;
+  font-weight: normal;
+}
+
+header .header__top a i {
+  margin-right: 10px;
+  font-size: 14px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ffffff;
+}
+
+header .navbar {
+  width: 95%;
+  margin: auto;
+}
+
+header .navbar .navbar-brand img {
+  margin-right: 40px;
+}
+
+header .navbar .nav-item {
+  margin: 0 16px;
+}
+
+header .navbar .nav-item .nav-link {
+  padding: 0;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+header .navbar .nav-item .nav-link:hover {
+  font-size: 14px;
+  color: #0088c6;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+  header .navbar .nav-item {
+    margin: auto;
+  }
+  header .navbar .nav-item .nav-link {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: normal;
+  }
+  header .navbar .nav-item .nav-link:hover {
+    font-size: 22px;
+    color: #0088c6;
+    font-weight: normal;
+  }
+}
+
+.merCarousel--content {
+  position: relative;
+}
+
+.merCarousel--content .item--content {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding-right: 40%;
+}
+
+.merCarousel--content .item--content a {
+  text-decoration: none;
+}
+
+.merCarousel--content .item--content a h3 {
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: normal;
+  letter-spacing: -2px;
+  margin-bottom: 28px;
+}
+
+.merCarousel--content .item--content a {
+  border-radius: 0;
+}
+
+.merCarousel--content .item--content a:hover {
+  background-color: #000000;
 }
 /*# sourceMappingURL=main.css.map */
