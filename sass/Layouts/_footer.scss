@@ -1,0 +1,105 @@
+footer {
+    .icon-footer {
+        width: calc(100% - 60px);
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        hr {
+            border: 0;
+            height: 1px;
+            margin: 30px -1px;
+            background: #333;
+        }
+        .icon-main {
+            .row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .col-4,
+                .col-sm-12,
+                .col-lg-4 {
+                    width: 33%;
+                    display: inline-block;
+                    margin: 28px 0;
+                    a {
+                        width: 100%;
+                        img {
+                            height: 28px;
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            color: $color-gray-0;
+            font-size: 13px;
+            line-height: 22px;
+            a {
+                color: white;
+                text-decoration: none;
+                transition: all 0.2s;
+                &:hover {
+                    color: $color-blue-1;
+                }
+            }
+        }
+    }
+    .footer--bot {
+        width: calc(100% - 60px);
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+            ul {
+                list-style: none;
+                li {
+                    display: inline;
+                    a {
+                        text-decoration: none;
+                        color: $color-gray-0;
+                        font-size: 13px;
+                        line-height: 22px;
+                        transition: all 0.3s;
+                        &:hover {
+                            color: $color-blue-1;
+                        }
+                    }
+                }
+            }
+            .footer-left {
+                padding-left: 0;
+            }
+            .footer-left ul {
+                text-align: left;
+                a {
+                    font-size: 15px;
+                    transition: all 0.3s;
+                    &:hover {
+                        color: $color-blue-1;
+                    }
+                }
+            }
+            .footer-center ul {
+                text-align: right;
+                li {
+                    margin-right: 15px;
+                    white-space: nowrap;
+                }
+            }
+            .footer-right a {
+                text-decoration: none;
+                color: $color-gray-0;
+                font-size: 13px;
+                line-height: 22px;
+                transition: all 0.3s;
+                &:hover {
+                    color: $color-blue-1;
+                }
+            }
+            .footer-right {
+                padding-right: 0;
+                text-align: right;
+            }
+        }
+    }
+}

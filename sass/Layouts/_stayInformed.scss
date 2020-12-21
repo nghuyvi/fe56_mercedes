@@ -1,0 +1,39 @@
+.stayInformed{
+    .stay {
+        width: calc(100% - 60px);
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        .stay-top {
+            font-size: 27px;
+            line-height: 3.14286rem;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            margin: 30px -1px;
+            background: #333;
+        }
+        p {
+            color: $color-gray-0;
+            font-size: 13px;
+            line-height: 22px;
+        }
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                margin: 10px 16.66667px;
+                width: 45px;
+                a {
+                    color: $color-gray-0;
+                    font-size: 28px;
+                    line-height: 22px;
+                    transition: all 0.3s;
+                    &:hover {
+                        color: $color-blue-1;
+                    }
+                }
+            }
+        }
+    }
+}

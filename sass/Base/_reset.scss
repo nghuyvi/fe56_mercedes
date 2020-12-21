@@ -6,6 +6,7 @@
 }
 html, body{
     @include styleText($fs-0,$color-black-0,$fw-normal);
+    background-color: $color-black-0;
 }
 .mercedes-title{
     font-family: 'Playfair Display', serif;
