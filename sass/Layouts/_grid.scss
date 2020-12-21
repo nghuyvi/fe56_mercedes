@@ -1,0 +1,173 @@
+.grid{
+    // thumb tab
+.nav-tabs {
+    border: none;
+    margin-bottom: $mg-3;
+    .nav-link {
+        border: none;
+        border-radius: 0;
+        @include styleText($fs-0, $color-white-0, $fw-normal);
+        padding: $pd-1;
+        margin: 0 $mg-1;
+        transition: color 0.25s ease-out, border-bottom-color 0.16s;
+        &:hover {
+            @include styleText($fs-0, $color-blue-0, $fw-normal);
+        }
+    }
+    .nav-link.active {
+        @include styleText($fs-0, $color-blue-0, $fw-normal);
+        border-bottom: 1px solid $color-blue-0;
+        background-color: $color-black-0;
+    }
+    i {
+        margin-right: 10px;
+    }
+}
+// thumb content
+.thumb-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .thumb-item {
+        position: relative;
+        list-style: none;
+        padding: 0 !important;
+        margin: 1px;
+        .thumb-img {
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+            .thumb-video {
+                position: absolute;
+                height: 25px;
+                background: white;
+                z-index: 10;
+                left: 0;
+                bottom: 50px;
+                transition: opacity 0.5s ease-out;
+                .video-icon {
+                        @include styleText($fs-0 - 5, $color-dark-1, $fw-normal);
+                        padding: 6.1px 10px;
+                }
+                .video-length {
+                    @include styleText($fs-0, $color-white-0, $fw-normal);
+                    background-color: $color-dark-1;
+                    padding: 2px 10px;
+                }
+            }
+        }
+        .thumb-overlay {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.35);
+            padding: $pd-1 + 1 $pd-4 + 1;
+            overflow: hidden;
+            transition: height 0.5s, background 1.5s;
+            .thumb-title {
+                @include styleText($fs-4, $color-white-0, $fw-normal);
+                line-height: $line-height-0 + 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .thumb-desc {
+                margin-top: $mg-1;
+                color: $color-white-0;
+            }
+        }
+        &:hover{
+            .thumb-overlay {
+                height: 50%;
+                background: rgba(0, 0, 0, 0.7);
+            }
+            .thumb-video{
+                opacity: 0;
+            }
+        }
+    }
+    .thumb-w-50 {
+        grid-column: span 2;
+        grid-row: span 2;
+        &:hover{
+            .thumb-overlay {
+                height: 25%;
+                background: rgba(0, 0, 0, 0.7);
+            }
+        }
+    }
+}
+// Show more button
+.thumb-read-more, 
+.thumb-read-more-2, 
+.thumb-read-more-3{
+    display: none;
+}
+.btnShowMore{
+    display: block;
+    margin: auto;
+    @include styleButton($color-dark-1, $color-dark-0, $pd-0 + 1,$pd-2);
+    background: linear-gradient(#303030,#202020);
+    @include styleText($fs-1,$color-gray-0,$fw-normal);
+    line-height: 20px;
+    transition: all .5s;
+    &:hover{
+        color: $color-white-0;
+    }
+    &:focus{
+        outline: none;
+    }
+    i{
+        margin-right: $mg-1;
+    }
+}
+// Responsive
+@media (max-width: 1280px) {
+    .thumb-content {
+        grid-template-columns: repeat(2, 1fr);
+        .thumb-w-50 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .thumb-item {
+            &:hover {
+                .thumb-overlay {
+                    height: 66.6667%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .thumb-content {
+        display: block;
+        .thumb-item {
+            &:hover {
+                .thumb-button {
+                    text-decoration: none;
+                    .thumb-overlay {
+                        height: 50px;
+                    }
+                    .thumb-video{
+                        opacity: 1;
+                    }
+                }
+            }
+            .thumb-overlay {
+                position: static;
+                margin-bottom: $mg-3;
+                p {
+                    display: none;
+                }
+            }
+            .thumb-video{
+                bottom: 0;
+            }
+        }
+    }
+}
+
+}
